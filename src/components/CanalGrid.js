@@ -36,15 +36,23 @@ const CanalGrid = ({ category }) => {
 
     return (
         <div>
+            <div id='cabecera'>                
+                <p id='button-sesion'>Iniciar Sesion</p>
+                <p id='button-register'>Registrarse</p>
+            </div>
+
             <h2>{category} </h2>
             <div>
                 {
-                    images.map( img => {
+                    images.map(img => {
                         return (
-                            <div key={img.id} className='card'>
-                                <img src={img.urls} alt={img.title} className='card-image'/>
-                                <p className='card-text'>{img.description} </p>
+                            <div className='card'>
+                                <div key={img.id} className='card-title'>
+                                    <img src={img.urls} alt={img.title} className='card-image' />
+                                    <p className='card-text'>{img.description} </p>
+                                </div>
                             </div>
+
                         );
                     })
                 }

@@ -6,3 +6,21 @@ body{
     margin: 0 auto;
     padding: 0
 }
+
+.lateral{    
+    display: inline-flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+.lateral-conten{
+    display: inline-flex;
+    flex-direction: column;  
+    flex-wrap: wrap;  
+}
+
+/*
+.conten-primary{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}*/
